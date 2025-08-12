@@ -247,6 +247,11 @@ h1 {
   line-height: 1.5;
 }
 
+.skills{
+color: var(--secundaria);
+font-weight: bold;
+}
+
 .botao-cv {
   margin-top: 10px;
   color: var(--claro);

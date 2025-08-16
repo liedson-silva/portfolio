@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Liedson | Portfólio</title>
 </head>
@@ -27,6 +28,9 @@
           <a href="#projetos" class="menu-link">Projetos</a>
         </li>
         <li>
+          <a href="#skills" class="menu-link">Skills</a>
+        </li>
+        <li>
           <a href="#contatos" class="menu-link">Contato</a>
         </li>
       </ul>
@@ -42,15 +46,6 @@
           Criando sistemas inovadores, funcionais e eficientes para soluções
           digitais com foco em desempenho, segurança e integração.
         </p>
-
-        <ul>
-          <li class="cabecalho-skills">Node.js</li>
-          <li class="cabecalho-skills">Express</li>
-          <li class="cabecalho-skills">MongoDB</li>
-          <li class="cabecalho-skills">Git</li>
-          <li class="cabecalho-skills">GitHub</li>
-        </ul>
-
         <div class="cabecalho-ajuste">
           <a href="#projetos" class="cabecalho-atalho">Projetos 🔗</a>
           <a href="#contatos" class="cabecalho-atalho">Contato ✉</a>
@@ -103,10 +98,9 @@
         <h2 class="saudacao">Olá, eu sou</h2>
         <h3 class="apresentar-me">Liedson de Oliveira Silva</h3>
         <p class="sobre-paragrafo">
-          Sou estudante de Análise e Desenvolvimento de Sistemas, com vontade
-          de aprender e crescer na área de tecnologia. Tenho conhecimento em
-          Node.js, API Rest, Express.js, MongoDB, React.js, Tailwind, HTML, CSS, JavaScript, C, C#, Git / GitHub e Figma, e busco
-          aplicar as melhores práticas para criar projetos funcionais. Ainda
+          Tenho 21 anos e atualmente estou estudando Análise e Desenvolvimento de
+          Sistemas. Busco aplicar as melhores práticas para
+          criar projetos funcionais. Ainda
           sem experiência profissional, me dedico a projetos pessoais e cursos
           para me preparar para novas oportunidades. Sou proativo, curioso e
           apaixonado por tecnologia.
@@ -116,6 +110,8 @@
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
             <polyline points="14 2 14 8 20 8" />
+            <line x1="9" y1="13" x2="15" y2="13" />
+            <line x1="9" y1="17" x2="15" y2="17" />
           </svg>
           Download CV
         </button>
@@ -128,68 +124,152 @@
   </section>
 
   <section id="projetos" class="projetos">
-    <h2 class="projetos-titulo">Meus projetos</h2>
+    <h2 class="projetos-titulo">Meus Projetos</h2>
     <div class="espaco-padrao">
-      <div class="projetos-card">
-        <a href="https://previsao-do-tempo-nine-kappa.vercel.app" target="_blank">
-          <img src="assets/previsaoTempo.png" alt="Previsão do tempo" class="projetos-imagem" />
-          <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Previsão de Tempo</h3>
-            <p class="paragrafo-projetos">
-              Mostra o clima atual e a previsão para os próximos 5 dias ao
-              buscar uma cidade ou país.
-            </p>
-            <p class="sub-paragrafo-projetos">Tecnologias usadas:
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo"
-                style="width: 28px; vertical-align: middle; margin-left: 8px;" />
-          </div>
-      </div>
-      </a>
 
-      <div class="projetos-card">
-        <a href="https://cadastro-de-usuario-ochre.vercel.app" target="_blank">
-          <img src="assets/cadastroUsuario.png" alt="Previsão do tempo" class="projetos-imagem" />
-          <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Cadastro de Usuário</h3>
-            <p class="paragrafo-projetos">
-              Formulário que salva, exibe e remove usuários, com integração ao
-              back-end e banco de dados.
-            </p>
-            <p class="sub-paragrafo-projetos">Tecnologias usadas:
-              <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo"
-                style="width: 68px;  margin-right: 8px; margin-left: 8px;" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo"
-                style="width: 28px; vertical-align: middle; margin-right: 8px;" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                alt="MongoDB Logo" style="width: 28px; vertical-align: middle;" />
-            </p>
-          </div>
-      </div>
-      </a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-      <div class="projetos-card">
-        <a href="https://calculadora-9rzc.vercel.app" target="_blank">
-          <img src="assets/calculadora.png" alt="Previsão do tempo" class="projetos-imagem" />
-          <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Calculadora Simples</h3>
-            <p class="paragrafo-projetos">
-              Calculadora que envia as operações ao back-end, que processa e
-              retorna o resultado.
-            </p>
-            <p class="sub-paragrafo-projetos">Tecnologias usadas:
-              <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo"
-                style="width: 68px;  margin-right: 8px; margin-left: 8px;" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo"
-                style="width: 28px; vertical-align: middle;" />
-            </p>
+
+          <div class="swiper-slide">
+            <a href="https://cadastro-de-usuario-ochre.vercel.app" target="_blank" class="projetos-card">
+              <img src="assets/cadastroUsuario.png" alt="Cadastro de Usuário" class="projetos-imagem" />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Cadastro de Usuário</h3>
+                <p class="paragrafo-projetos">
+                  Formulário que salva, exibe e remove usuários, com integração ao back-end e banco de dados.
+                <ul>
+                  <li class="tecnologia">NodeJs</li>
+                  <li class="tecnologia">MongoDB</li>
+                  <li class="tecnologia">ExpressJs</li>
+                  <li class="tecnologia">ReactJs</li>
+                </ul>
+                </p>
+              </div>
+            </a>
           </div>
+
+
+          <div class="swiper-slide">
+            <a href="https://to-do-list-liedson.vercel.app" target="_blank" class="projetos-card">
+              <img src="assets/toDoList.png" alt="To-Do List" class="projetos-imagem" />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">To-Do List</h3>
+                <p class="paragrafo-projetos">
+                  Aplicação de lista de tarefas (To-Do List), com integração ao back-end e banco de dados.
+                <ul>
+                  <li class="tecnologia">NodeJs</li>
+                  <li class="tecnologia">MongoDB</li>
+                  <li class="tecnologia">ExpressJs</li>
+                  <li class="tecnologia">ReactJs</li>
+                </ul>
+                </p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="swiper-slide">
+            <a href="https://calculadora-9rzc.vercel.app" target="_blank" class="projetos-card">
+              <img src="assets/calculadora.png" alt="Calculadora Simples" class="projetos-imagem" />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Calculadora Simples</h3>
+                <p class="paragrafo-projetos">
+                  Calculadora que envia as operações ao back-end, que processa e retorna o resultado.
+                <ul>
+                  <li class="tecnologia">NodeJs</li>
+                  <li class="tecnologia">ExpressJs</li>
+                  <li class="tecnologia">ReactJs</li>
+                </ul>
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://previsao-do-tempo-nine-kappa.vercel.app" target="_blank" class="projetos-card">
+              <img src="assets/previsaoTempo.png" alt="Previsão do Tempo" class="projetos-imagem" />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Previsão do Tempo</h3>
+                <p class="paragrafo-projetos">
+                  Mostra o clima atual e a previsão para os próximos 5 dias ao buscar uma cidade ou país.
+                  <li class="tecnologia">ReactJs</li>
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      </a>
     </div>
   </section>
 
+  <section id="skills" class="skills">
+    <h4 class="skills-titulo">Skills</h4>
+    <div class="skills-grid">
+      <ul>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+            title="Node.js" width="50px" />Node.js
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+            title="Express.js" width="50px" />Express.js
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="50px" />MongoDB
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title="React.js"
+            width="50px" />React.js
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            title="Tailwind" width="50px" />Tailwind
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" title="HTML"
+            width="50px" />HTML
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" title="CSS"
+            width="50px" />CSS
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+            title="JavaScript" width="50px" />JavaScript
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" title="C"
+            width="50px" />C
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" title="C#"
+            width="50px" />C#
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" title="Git"
+            width="50px" />Git
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" title="GitHub"
+            width="50px" />GitHub
+        </li>
+        <li class="skills-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" title="Figma"
+            width="50px" />Figma
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
   <section id="contatos" class="contatos">
-    <h4 class="contatos-titulo">Entre em Contato</h4>
+    <h5 class="contatos-titulo">Entre em Contato</h5>
     <div class="espaco-padrao">
       <div class="contatos-textos">
         <h5 class="contatos-subtitulo">
@@ -208,7 +288,7 @@
             <path
               d="M2 4a2 2 0 012-2h16a2 2 0 012 2v0.01L12 13 2 4.01V4zm0 2.236V20a2 2 0 002 2h16a2 2 0 002-2V6.236l-10 8.5-10-8.5z" />
           </svg>
-          Email: liedsonsilva.987@gmail.com
+          Email: liedsonsilva987@gmail.com
         </p>
         <p>
           <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="#3b82f6" viewBox="0 0 24 24"
@@ -246,6 +326,27 @@
 
       window.open(url, "_blank");
     }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
   </script>
 </body>
 

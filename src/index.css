@@ -53,6 +53,12 @@ body {
   padding: 0 2rem;
 }
 
+.nome-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu-nome {
   font-size: 25px;
   font-weight: bold;
@@ -63,11 +69,23 @@ body {
   color: var(--primaria);
 }
 
+.menu-nome-mobile {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--claro);
+  border: none;
+  background: none;
+  display: none;
+}
+
+.nome-destaque-mobile {
+  color: var(--primaria);
+}
+
 .menu {
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 0;
 }
 
 .menu li:first-child {
@@ -102,19 +120,43 @@ body {
   width: 100%;
 }
 
-@media(max-width: 720px) {
+@media(max-width: 768px) {
   .menu-nome {
     font-size: 20px;
   }
 
-  .menu li:not(:first-child) {
-    margin-left: 20px;
+  .menu-nome,
+  .nome-destaque {
+    display: none;
   }
+
+  .menu-nome-mobile {
+    display: block;
+  }
+
+  .menu {
+    font-size: 18px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu li:first-child {
+    margin-right: 0;
+  }
+
+  .menu li:not(:first-child) {
+    margin-left: 15px;
+  }
+
 }
 
 .cabecalho {
-  padding: 5rem 0rem;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .cabecalho-titulo {
@@ -129,7 +171,6 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  gap: 2rem;
 }
 
 .cabecalho-nome {
@@ -212,19 +253,27 @@ h1 {
   height: 500px;
 }
 
-@media(max-width: 720px) {
-  .cabecalho-titulo{
-    margin-bottom: 100px;
-  }
-  
-  .animacao-cabecalho {
+@media(max-width: 768px) {
+  .cabecalho-titulo {
     display: none;
+  }
+
+  .animacao-cabecalho {
+    width: 300px;
+    height: 300px;
+  }
+
+  .espaco-padrao {
+    flex-direction: column;
   }
 }
 
 .sobre {
-  padding: 5rem 0rem;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sobre-titulo {
@@ -289,17 +338,28 @@ h1 {
   animation: flutuar 5s ease-out infinite;
 }
 
-@media(max-width: 720px) {
-  .espaco-padrao {
-    flex-direction: column;
-    max-width: 90%;
-  }
-
-
-
+@media(max-width: 768px) {
   .ajustar-foto-perfil {
     margin-top: 20px;
     max-width: 250px;
+  }
+
+  .sobre-titulo {
+    margin-bottom: 50px;
+  }
+
+  .saudacao,
+  .apresentar-me {
+    font-size: 2rem;
+  }
+
+  .sobre-paragrafo {
+    font-size: 1rem;
+  }
+
+  .botao-cv {
+    font-size: 0.9rem;
+    padding: 6px 1rem;
   }
 
   .foto-perfil {
@@ -321,8 +381,11 @@ h1 {
 }
 
 .projetos {
-  padding: 5rem 0rem;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .projetos-titulo {
@@ -342,7 +405,7 @@ h1 {
 
 .projetos-card {
   background: rgba(255, 255, 255, 0.05);
-  min-height: 480px;
+  min-height: 470px;
   border-radius: 16px;
   backdrop-filter: blur(5px);
   border: 1px solid var(--vidro);
@@ -393,10 +456,10 @@ a {
 
 .skills {
   min-height: 100vh;
-  padding: 5rem 0rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* centraliza o container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .skills-titulo {
@@ -409,6 +472,7 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 60px;
+  column-gap: 60px;
   list-style: none;
   justify-items: center;
 }
@@ -434,6 +498,15 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .skills-grid ul {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+}
+
 .sub-paragrafo-projetos {
   margin-top: 5px;
   color: var(--primaria);
@@ -442,7 +515,10 @@ a {
 
 .contatos {
   min-height: 100vh;
-  padding: 5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contatos-titulo {
@@ -453,11 +529,12 @@ a {
 
 .contatos-textos {
   max-width: 600px;
+  width: 100%;
 }
 
 .contatos-subtitulo {
   font-size: 2rem;
-  max-width: 590px;
+  max-width: 600px;
   margin-bottom: 9px;
 }
 
@@ -480,7 +557,7 @@ a {
 }
 
 .formulario-contato {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.05);
@@ -524,4 +601,23 @@ a {
 .botao-form:hover {
   transform: translateY(-4px);
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+@media (max-width: 768px) {
+  .formulario-contato {
+    padding: 1rem;
+  }
+
+  .contatos-titulo {
+    margin-bottom: 50px;
+  }
+
+  .contatos-subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .contatos-textos{
+    margin-bottom: 30px;
+  }
+
 }

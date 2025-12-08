@@ -9,7 +9,7 @@ const ToDoList = () => {
                 <div className="caixa-textos-projetos">
                     <h3 className="info-projetos">To-Do List</h3>
                     <p className="paragrafo-projetos">
-                        Aplicação de lista de tarefas que salva, exibe, edita e remove tarefas, com integração ao back-end e banco de dados.
+                        Lista de tarefas que salva, exibe, edita e remove tarefas, com integração ao back-end e banco de dados.
                     </p>
                     <ul>
                         <li className="tecnologia">NodeJs</li>

@@ -56,13 +56,19 @@ const App = () => {
         <main>
             <nav className="navegacao">
                 <div className="navegacao-container">
+                    <div className='nome-mobile'>
+                        <a href="#inicio" className="menu-nome-mobile">&lt;Liedson
+                            <span
+                                className="nome-destaque-mobile">Silva/&gt;
+                            </span>
+                        </a>
+                    </div>
+
                     <ul className="menu">
                         <li>
                             <a href="#inicio" className="menu-nome">&lt;Liedson<span className="nome-destaque">Silva/&gt;</span></a>
                         </li>
-                        <li>
-                            <a href="#inicio" className="menu-link">Início</a>
-                        </li>
+
                         <li>
                             <a href="#sobre" className="menu-link">Sobre</a>
                         </li>
@@ -130,7 +136,7 @@ const App = () => {
                     </div>
 
                     <div >
-                         <dotlottie-wc src="https://lottie.host/3c3c339b-fd9e-4914-ba45-f133ff64f8c5/duQvqEvV2w.lottie" className="animacao-cabecalho" speed="1" autoplay loop></dotlottie-wc>
+                        <dotlottie-wc src="https://lottie.host/3c3c339b-fd9e-4914-ba45-f133ff64f8c5/duQvqEvV2w.lottie" className="animacao-cabecalho" speed="1" autoplay loop></dotlottie-wc>
                     </div>
 
                 </div>
@@ -143,12 +149,10 @@ const App = () => {
                         <h2 className="saudacao">Olá, eu sou</h2>
                         <h3 className="apresentar-me">Liedson de Oliveira Silva</h3>
                         <p className="sobre-paragrafo">
-                            Tenho 21 anos e atualmente estou estudando Análise e Desenvolvimento de
-                            Sistemas. Busco aplicar as melhores práticas para
-                            criar projetos funcionais. Ainda
+                            Tenho 21 anos e sou formado em Análise e Desenvolvimento de
+                            Sistemas (UNIP). Ainda
                             sem experiência profissional, me dedico a projetos pessoais e cursos
-                            para me preparar para novas oportunidades. Sou proativo, curioso e
-                            apaixonado por tecnologia.
+                            para me preparar para novas oportunidades.
                         </p>
                         <button className="botao-cv" onClick={() => window.open(curriculo, '_blank')}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
@@ -254,9 +258,7 @@ const App = () => {
                         </h5>
                         <p className="contatos-paragrafo">
                             Estou aqui para ajudar você a criar soluções digitais que
-                            impulsionam o crescimento do seu negócio. Entre em contato para
-                            discurtimos suas necessidades e como podemos alcançar seus objetivos
-                            juntos.
+                            impulsionam o crescimento do seu negócio.
                         </p>
                         <p className="contatos-subparagrafo">Contate-me</p>
                         <p className="contatos-subcontate-me">

@@ -146,7 +146,7 @@ body {
   }
 
   .menu li:first-child {
-    margin-right: 30px;
+    margin-right: 15px;
   }
 
   .menu li:not(:first-child) {

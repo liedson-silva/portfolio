@@ -44,7 +44,7 @@ body {
   background: rgba(15, 23, 42, 0.8);
   width: 100%;
   z-index: 100;
-  padding: 1.5rem;
+  padding: .5rem;
 }
 
 .navegacao-container {
@@ -121,6 +121,10 @@ body {
 }
 
 @media(max-width: 768px) {
+  .nav-oculta {
+    top: -100px;
+  }
+
   .menu-nome {
     font-size: 20px;
   }
@@ -142,7 +146,7 @@ body {
   }
 
   .menu li:first-child {
-    margin-right: 0;
+    margin-right: 30px;
   }
 
   .menu li:not(:first-child) {
@@ -438,6 +442,12 @@ a {
   margin-bottom: 5px;
 }
 
+.info-projetos-login {
+  font-size: 0.8rem;
+  color: red;
+  margin-left: 8px;
+}
+
 .paragrafo-projetos {
   color: rgba(256, 232, 240, 0.8);
   line-height: 1.25rem;
@@ -447,6 +457,7 @@ a {
   list-style: none;
   display: inline-block;
   margin-top: 7px;
+  margin-right: 2px;
   padding: 5px;
   color: var(--claro);
   border: 1px solid var(--vidro);
@@ -616,7 +627,7 @@ a {
     font-size: 1.5rem;
   }
 
-  .contatos-textos{
+  .contatos-textos {
     margin-bottom: 30px;
   }
 

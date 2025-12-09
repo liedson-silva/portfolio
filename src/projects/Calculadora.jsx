@@ -12,9 +12,8 @@ const Calculadora = () => {
                         Calculadora que envia as operações ao back-end, que processa o calculo e retorna o resultado.
                     </p>
                     <ul>
-                        <li className="tecnologia">NodeJs</li>
-                        <li className="tecnologia">ExpressJs</li>
-                        <li className="tecnologia">ReactJs</li>
+                        <li className="tecnologia">Node Js</li>
+                        <li className="tecnologia">React</li>
                     </ul>
                 </div>
             </a>

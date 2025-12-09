@@ -12,10 +12,9 @@ const CadastroUsuario = () => {
                         Formulário que salva, exibe e remove usuários, com integração ao back-end e banco de dados.
                     </p>
                     <ul>
-                        <li className="tecnologia">NodeJs</li>
+                        <li className="tecnologia">Node Js</li>
                         <li className="tecnologia">MongoDB</li>
-                        <li className="tecnologia">ExpressJs</li>
-                        <li className="tecnologia">ReactJs</li>
+                        <li className="tecnologia">React</li>
                     </ul>
                 </div>
             </a>

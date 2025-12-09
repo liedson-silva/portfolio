@@ -12,7 +12,8 @@ const PrevisaoTempo = () => {
             Mostra o clima atual e a previsão para os próximos 5 dias ao buscar uma cidade ou país.
           </p>
           <ul>
-            <li className="tecnologia">ReactJs</li>
+            <li className="tecnologia">React</li>
+            <li className="tecnologia">Weather Informations</li>
           </ul>
         </div>
       </a>

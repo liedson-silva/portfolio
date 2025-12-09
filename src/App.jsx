@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import FatalSystem from './projects/FatalSystem.jsx';
 
 const App = () => {
     const [nome, setNome] = useState('');
@@ -20,10 +21,11 @@ const App = () => {
     const [slidesPerView, setSlidesPerView] = useState(3);
 
     const data = [
-        { id: '1', projeto: <PrevisaoTempo /> },
-        { id: '2', projeto: <ToDoList /> },
-        { id: '3', projeto: <Calculadora /> },
-        { id: '4', projeto: <CadastroUsuario /> },
+        { id: '1', projeto: <FatalSystem /> },
+        { id: '2', projeto: <PrevisaoTempo /> },
+        { id: '3', projeto: <ToDoList /> },
+        { id: '4', projeto: <Calculadora /> },
+        { id: '5', projeto: <CadastroUsuario /> },
     ];
 
     useEffect(() => {
@@ -50,6 +52,30 @@ const App = () => {
 
         window.open(url, "_blank");
     }
+
+    useEffect(() => {
+        const nav = document.querySelector('.navegacao');
+        if (!nav) return;
+
+        let lastScroll = 0;
+        const delta = 5;
+
+        const handleScroll = () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll <= 0) {
+                nav.classList.remove('nav-oculta');
+            }
+            else if (Math.abs(lastScroll - currentScroll) > delta) {
+                nav.classList.toggle('nav-oculta', currentScroll > lastScroll);
+            }
+
+            lastScroll = currentScroll;
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
 
@@ -87,7 +113,6 @@ const App = () => {
 
 
             <section id="inicio" className="cabecalho">
-                <h2 className="cabecalho-titulo">Bem vindo(a) ao meu portfólio!</h2>
                 <div className="espaco-padrao">
                     <div className="cabecalho-nome">
                         <h1>Desenvolvedor<span className="cabecalho-sub-titulo">Back-End</span></h1>

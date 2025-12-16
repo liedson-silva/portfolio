@@ -159,7 +159,7 @@ const App = () => {
                         <h2 className="saudacao">Olá, eu sou</h2>
                         <h3 className="apresentar-me">Liedson de Oliveira Silva</h3>
                         <p className="sobre-paragrafo">
-                            Tenho 21 anos, graduando no curso de Análise e desenvolvimento de sistemas pela UNIP. Desenvolvo software, páginas e sistemas web responsívos de layout atrativo. Tenho uma trajetória de estudos com cerca de 2 anos na área de desenvolvimento. Ainda
+                            Tenho 21 anos, graduando no curso de Análise e desenvolvimento de sistemas pela UNIP. Desenvolvo software, páginas e sistemas web responsívos de layout atrativo. Ainda
                             sem experiência profissional, me dedico a projetos pessoais e cursos
                             para me preparar para novas oportunidades.
                         </p>

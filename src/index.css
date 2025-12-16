@@ -332,18 +332,18 @@ h1 {
 
 @media(max-width: 768px) {
   .ajustar-foto-perfil {
-    margin-top: 20px;
     max-width: 250px;
     margin-right: 0;
   }
 
   .sobre-titulo {
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
 
   .saudacao,
   .apresentar-me {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .sobre-paragrafo {
@@ -356,8 +356,8 @@ h1 {
   }
 
   .foto-perfil {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -464,7 +464,6 @@ a {
 }
 
 .skills-titulo {
-  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 6rem;
 }
@@ -500,10 +499,25 @@ a {
 }
 
 @media (max-width: 768px) {
+
+  .skills-titulo{
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+
+  .skills-box {
+    width: 80px;
+  }
+
   .skills-grid ul {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 20px;
     column-gap: 20px;
+  }
+
+  .projetos-titulo {
+    font-size: 2rem;
+    margin-bottom: 50px;
   }
 
 }
@@ -566,6 +580,7 @@ a {
   padding: 2rem;
   border: 1px solid var(--vidro);
   border-radius: 16px;
+  margin-left: 10rem;
 }
 
 .grupo-form {
@@ -607,18 +622,20 @@ a {
 @media (max-width: 768px) {
   .formulario-contato {
     padding: 1rem;
+    margin-left: 0;
   }
 
   .contatos-titulo {
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 
   .contatos-subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .contatos-textos {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
 }

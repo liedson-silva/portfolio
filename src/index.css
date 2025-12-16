@@ -23,21 +23,6 @@ body {
   color: var(--claro);
 }
 
-.particulas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.5;
-  background: radial-gradient(circle at 10% 20%,
-      var(--primaria) 0%,
-      transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
-    var(--maisEscuro);
-}
-
 .navegacao {
   position: fixed;
   top: 0;
@@ -53,12 +38,6 @@ body {
   padding: 0 2rem;
 }
 
-.nome-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .menu-nome {
   font-size: 25px;
   font-weight: bold;
@@ -66,19 +45,6 @@ body {
 }
 
 .menu-nome .nome-destaque {
-  color: var(--primaria);
-}
-
-.menu-nome-mobile {
-  font-size: 25px;
-  font-weight: bold;
-  color: var(--claro);
-  border: none;
-  background: none;
-  display: none;
-}
-
-.nome-destaque-mobile {
   color: var(--primaria);
 }
 
@@ -120,37 +86,57 @@ body {
   width: 100%;
 }
 
+.menu-mobile {
+  font-size: 30px;
+  color: var(--claro);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  margin-left: 6rem;
+}
+
+.dropdown-mobile {
+  display: flex;
+  margin-left: auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+  border-radius: 8px;
+  background: linear-gradient(to right, var(--escuro), var(--maisEscuro));
+  display: none;
+  top: 60px;
+  right: 50px;
+}
+
+.dropdown-menu li {
+  color: var(--claro);
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
 @media(max-width: 768px) {
-  .nav-oculta {
-    top: -100px;
+
+  .navegacao-container {
+    padding: .5rem 3rem;
   }
 
-  .menu-nome {
-    font-size: 20px;
-  }
-
-  .menu-nome,
-  .nome-destaque {
+  .menu-link {
     display: none;
   }
 
-  .menu-nome-mobile {
+  .dropdown-mobile:focus-within .dropdown-menu {
     display: block;
   }
 
-  .menu {
-    font-size: 18px;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-  }
-
-  .menu li:first-child {
-    margin-right: 15px;
-  }
-
-  .menu li:not(:first-child) {
-    margin-left: 15px;
+  .menu-mobile {
+    display: block;
   }
 
 }
@@ -273,6 +259,7 @@ h1 {
 }
 
 .sobre {
+  background-color: var(--maisEscuro);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -331,6 +318,7 @@ h1 {
 .ajustar-foto-perfil {
   flex-shrink: 0;
   max-width: 350px;
+  margin-right: 5rem;
 }
 
 .foto-perfil {
@@ -346,6 +334,7 @@ h1 {
   .ajustar-foto-perfil {
     margin-top: 20px;
     max-width: 250px;
+    margin-right: 0;
   }
 
   .sobre-titulo {
@@ -466,6 +455,7 @@ a {
 }
 
 .skills {
+  background-color: var(--maisEscuro);
   min-height: 100vh;
   display: flex;
   align-items: center;

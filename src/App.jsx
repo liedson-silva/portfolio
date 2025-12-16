@@ -6,6 +6,7 @@ import Calculadora from './projects/Calculadora.jsx';
 import PrevisaoTempo from './projects/PrevisaoTempo.jsx';
 import { useState, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
+import { HiOutlineViewList } from "react-icons/hi";
 
 register();
 import 'swiper/css';
@@ -14,6 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import FatalSystem from './projects/FatalSystem.jsx';
+import Portfolio from './projects/Portfolio.jsx';
 
 const App = () => {
     const [nome, setNome] = useState('');
@@ -23,9 +25,10 @@ const App = () => {
     const data = [
         { id: '1', projeto: <FatalSystem /> },
         { id: '2', projeto: <PrevisaoTempo /> },
-        { id: '3', projeto: <ToDoList /> },
-        { id: '4', projeto: <Calculadora /> },
-        { id: '5', projeto: <CadastroUsuario /> },
+        { id: '3', projeto: <Portfolio /> },
+        { id: '4', projeto: <ToDoList /> },
+        { id: '5', projeto: <Calculadora /> },
+        { id: '6', projeto: <CadastroUsuario /> },
     ];
 
     useEffect(() => {
@@ -53,59 +56,37 @@ const App = () => {
         window.open(url, "_blank");
     }
 
-    useEffect(() => {
-        const nav = document.querySelector('.navegacao');
-        if (!nav) return;
-
-        let lastScroll = 0;
-        const delta = 5;
-
-        const handleScroll = () => {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScroll <= 0) {
-                nav.classList.remove('nav-oculta');
-            }
-            else if (Math.abs(lastScroll - currentScroll) > delta) {
-                nav.classList.toggle('nav-oculta', currentScroll > lastScroll);
-            }
-
-            lastScroll = currentScroll;
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
 
         <main>
             <nav className="navegacao">
                 <div className="navegacao-container">
-                    <div className='nome-mobile'>
-                        <a href="#inicio" className="menu-nome-mobile">&lt;Liedson
-                            <span
-                                className="nome-destaque-mobile">Silva/&gt;
-                            </span>
-                        </a>
-                    </div>
-
                     <ul className="menu">
                         <li>
                             <a href="#inicio" className="menu-nome">&lt;Liedson<span className="nome-destaque">Silva/&gt;</span></a>
                         </li>
 
+                        <div className="dropdown-mobile" tabIndex={0}>
+                            <button className="menu-mobile"><HiOutlineViewList /></button>
+                            <ul className="dropdown-menu">
+                                <li><a href="#sobre" className="menu">Sobre mim</a></li>
+                                <li><a href="#projetos" className="menu">Projetos</a></li>
+                                <li><a href="#skills" className="menu">Conhecimentos</a></li>
+                                <li><a href="#contatos" className="menu">Fale comigo</a></li>
+                            </ul>
+                        </div>
+
                         <li>
-                            <a href="#sobre" className="menu-link">Sobre</a>
+                            <a href="#sobre" className="menu-link">Sobre mim</a>
                         </li>
                         <li>
                             <a href="#projetos" className="menu-link">Projetos</a>
                         </li>
                         <li>
-                            <a href="#skills" className="menu-link">Skills</a>
+                            <a href="#skills" className="menu-link">Conhecimentos</a>
                         </li>
                         <li>
-                            <a href="#contatos" className="menu-link">Contato</a>
+                            <a href="#contatos" className="menu-link">Fale comigo</a>
                         </li>
                     </ul>
                 </div>
@@ -115,7 +96,7 @@ const App = () => {
             <section id="inicio" className="cabecalho">
                 <div className="espaco-padrao">
                     <div className="cabecalho-nome">
-                        <h1>Desenvolvedor<span className="cabecalho-sub-titulo">Back-End</span></h1>
+                        <h1>Desenvolvedor<span className="cabecalho-sub-titulo">de Software</span></h1>
 
                         <p className="cabecalho-apresentacao">
                             Criando sistemas inovadores, funcionais e eficientes para soluções
@@ -170,12 +151,15 @@ const App = () => {
             <section id="sobre" className="sobre">
                 <h2 className="sobre-titulo">Sobre mim</h2>
                 <div className="espaco-padrao">
+                    <div className="ajustar-foto-perfil">
+                        <img src={foto} alt="Foto de Liedson Silva" className="foto-perfil" />
+                    </div>
+
                     <div className="sobre-texto">
                         <h2 className="saudacao">Olá, eu sou</h2>
                         <h3 className="apresentar-me">Liedson de Oliveira Silva</h3>
                         <p className="sobre-paragrafo">
-                            Tenho 21 anos e sou formado em Análise e Desenvolvimento de
-                            Sistemas (UNIP). Ainda
+                            Tenho 21 anos, graduando no curso de Análise e desenvolvimento de sistemas pela UNIP. Desenvolvo software, páginas e sistemas web responsívos de layout atrativo. Tenho uma trajetória de estudos com cerca de 2 anos na área de desenvolvimento. Ainda
                             sem experiência profissional, me dedico a projetos pessoais e cursos
                             para me preparar para novas oportunidades.
                         </p>
@@ -189,10 +173,6 @@ const App = () => {
                             </svg>
                             Download CV
                         </button>
-                    </div>
-
-                    <div className="ajustar-foto-perfil">
-                        <img src={foto} alt="Foto de Liedson Silva" className="foto-perfil" />
                     </div>
                 </div>
             </section>

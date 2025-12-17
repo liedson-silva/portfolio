@@ -4,11 +4,14 @@ import ToDoList from './projects/ToDoList.jsx';
 import CadastroUsuario from './projects/CadastroUsuario.jsx';
 import Calculadora from './projects/Calculadora.jsx';
 import PrevisaoTempo from './projects/PrevisaoTempo.jsx';
+import FatalSystem from './projects/FatalSystem.jsx';
+import Portfolio from './projects/Portfolio.jsx';
 import { useState, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 import { HiOutlineViewList } from "react-icons/hi";
 import lego from './assets/lego.jpeg';
-import Skills from './components/skills.jsx';
+import Skills from './components/Skills.jsx';
+import SocialNetwork from './components/SocialNetwork.jsx';
 
 register();
 import 'swiper/css';
@@ -16,9 +19,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import FatalSystem from './projects/FatalSystem.jsx';
-import Portfolio from './projects/Portfolio.jsx';
-import SocialNetwork from './components/SocialNetwork.jsx';
 
 const App = () => {
     const [nome, setNome] = useState('');

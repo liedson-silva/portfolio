@@ -9,7 +9,7 @@ const FatalSystem = () => {
         <div className="caixa-textos-projetos">
           <h3 className="info-projetos">Fatal System -<span className='info-projetos-login'>login: liedson | senha: 1</span></h3>
           <p className="paragrafo-projetos">
-            Gerenciamento de chamados para suporte técnico, com triagem e resposta pela IA. Compatível com as versões Web, Mobile e Desktop.
+            Gestão de chamados com triagem e resolução sugerida por IA. Compatível com Web, Mobile e Desktop.
           </p>
           <ul>
             <li className="tecnologia">Node Js</li>

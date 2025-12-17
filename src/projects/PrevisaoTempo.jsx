@@ -9,7 +9,7 @@ const PrevisaoTempo = () => {
         <div className="caixa-textos-projetos">
           <h3 className="info-projetos">Previsão do Tempo</h3>
           <p className="paragrafo-projetos">
-            Mostra o clima atual e a previsão para os próximos 5 dias ao buscar uma cidade ou país.
+            Exibe o clima atual e a previsão para os próximos 5 dias ao buscar uma cidade ou país.
           </p>
           <ul>
             <li className="tecnologia">React</li>

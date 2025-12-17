@@ -54,14 +54,13 @@ body {
   list-style: none;
 }
 
-.menu li:first-child {
+.menu>li:first-child {
   margin-right: auto;
 }
 
-.menu li:not(:first-child) {
+.menu>li:not(:first-child) {
   margin-left: 80px;
 }
-
 
 .menu-link {
   text-decoration: none;
@@ -86,39 +85,32 @@ body {
   width: 100%;
 }
 
-.menu-mobile {
-  font-size: 30px;
-  color: var(--claro);
-  background: none;
-  border: none;
-  cursor: pointer;
+.dropdown-mobile {
   display: none;
-  margin-left: 6rem;
 }
 
-.dropdown-mobile {
-  display: flex;
-  margin-left: auto;
+.button-dropdown-mobile {
+  background: none;
+  border: none;
+  color: var(--claro);
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .dropdown-menu {
-  position: absolute;
+  position: fixed;
   border-radius: 8px;
   background: linear-gradient(to right, var(--escuro), var(--maisEscuro));
-  display: none;
   top: 60px;
-  right: 50px;
-}
-
-.dropdown-menu li {
-  color: var(--claro);
+  right: 0px;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
   display: flex;
-  justify-content: end;
-  margin-bottom: 10px;
-}
-
-.dropdown:focus-within .dropdown-menu {
-  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 @media(max-width: 768px) {
@@ -131,12 +123,12 @@ body {
     display: none;
   }
 
-  .dropdown-mobile:focus-within .dropdown-menu {
+  .dropdown-mobile {
     display: block;
   }
 
-  .menu-mobile {
-    display: block;
+  .menu{
+    gap: 5rem;
   }
 
 }
@@ -238,9 +230,17 @@ h1 {
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
-.animacao-cabecalho {
-  width: 500px;
-  height: 500px;
+.ajustar-foto-lego {
+  margin-left: 5rem;
+}
+
+.foto-lego {
+  width: 350px;
+  height: 350px;
+  margin-top: 20px;
+  box-shadow: 0 0 80px rgba(233, 233, 234, 0.3);
+  border-radius: 50%;
+  border: 4px solid var(--vidro);
 }
 
 @media(max-width: 768px) {
@@ -248,13 +248,17 @@ h1 {
     display: none;
   }
 
-  .animacao-cabecalho {
-    width: 300px;
-    height: 300px;
-  }
-
   .espaco-padrao {
     flex-direction: column;
+  }
+
+  .ajustar-foto-lego {
+  margin-left: 0;
+}
+
+  .foto-lego {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -384,7 +388,7 @@ h1 {
 .projetos-titulo {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .projeto-container {
@@ -500,7 +504,7 @@ a {
 
 @media (max-width: 768px) {
 
-  .skills-titulo{
+  .skills-titulo {
     font-size: 2rem;
     margin-bottom: 60px;
   }
@@ -511,13 +515,13 @@ a {
 
   .skills-grid ul {
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
   }
 
   .projetos-titulo {
     font-size: 2rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
 }

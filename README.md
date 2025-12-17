@@ -18,4 +18,4 @@ Você pode acessar o portfólio clicando no link abaixo:
 
 ## Imagem do projeto
 
-![Screenshot do site](./assets/imagemPortfolio.png)
+![Screenshot do site](./src/assets/imagemPortfolio.png)

@@ -16,6 +16,10 @@ const Skills = () => {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="50px" />MongoDB
                 </li>
                 <li className="skills-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg"
+                        title="SQL Server" width="50px" />SQLServer
+                </li>
+                <li className="skills-box">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title="React.js"
                         width="50px" />React.js
                 </li>

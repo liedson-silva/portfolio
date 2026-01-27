@@ -2,6 +2,7 @@ import foto from './assets/foto.jpg';
 import curriculo from './assets/curriculo.pdf';
 import ToDoList from './projects/ToDoList.jsx';
 import CadastroUsuario from './projects/CadastroUsuario.jsx';
+import LojaVirtual from './projects/LojaVirtual.jsx';
 import Calculadora from './projects/Calculadora.jsx';
 import PrevisaoTempo from './projects/PrevisaoTempo.jsx';
 import FatalSystem from './projects/FatalSystem.jsx';
@@ -28,11 +29,12 @@ const App = () => {
 
     const data = [
         { id: '1', projeto: <FatalSystem /> },
-        { id: '2', projeto: <PrevisaoTempo /> },
-        { id: '3', projeto: <Portfolio /> },
-        { id: '4', projeto: <ToDoList /> },
-        { id: '5', projeto: <Calculadora /> },
-        { id: '6', projeto: <CadastroUsuario /> },
+        { id: '2', projeto: <LojaVirtual /> },
+        { id: '3', projeto: <PrevisaoTempo /> },
+        { id: '4', projeto: <Portfolio /> },
+        { id: '5', projeto: <ToDoList /> },
+        { id: '6', projeto: <Calculadora /> },
+        { id: '7', projeto: <CadastroUsuario /> },
     ];
 
     useEffect(() => {

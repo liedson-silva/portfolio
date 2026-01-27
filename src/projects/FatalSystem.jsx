@@ -1,4 +1,3 @@
-import React from 'react'
 import fatalSystem from '../assets/fatalSystem.png'
 
 const FatalSystem = () => {

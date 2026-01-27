@@ -3,7 +3,7 @@ import fatalSystem from '../assets/fatalSystem.png'
 const FatalSystem = () => {
   return (
     <main className="projetos-card">
-      <a href="https://fatal-system.vercel.app/#/" target="_blank" >
+      <a href="https://github.com/liedson-silva/Gerenciamento-de-chamados" target="_blank" >
         <img src={fatalSystem} alt="Fatal System" className="projetos-imagem" />
         <div className="caixa-textos-projetos">
           <h3 className="info-projetos">Fatal System</h3>

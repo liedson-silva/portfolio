@@ -20,6 +20,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Agenda from './projects/Agenda.jsx';
 
 const App = () => {
     const [nome, setNome] = useState('');
@@ -28,13 +29,14 @@ const App = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const data = [
-        { id: '1', projeto: <FatalSystem /> },
-        { id: '2', projeto: <LojaVirtual /> },
-        { id: '3', projeto: <PrevisaoTempo /> },
-        { id: '4', projeto: <Portfolio /> },
-        { id: '5', projeto: <ToDoList /> },
-        { id: '6', projeto: <Calculadora /> },
-        { id: '7', projeto: <CadastroUsuario /> },
+        { id: '1', projeto: <LojaVirtual /> },
+        { id: '2', projeto: <FatalSystem /> },
+        { id: '3', projeto: <Agenda /> },
+        { id: '4', projeto: <PrevisaoTempo /> },
+        { id: '5', projeto: <Portfolio /> },
+        { id: '6', projeto: <ToDoList /> },
+        { id: '7', projeto: <Calculadora /> },
+        { id: '8', projeto: <CadastroUsuario /> },
     ];
 
     useEffect(() => {

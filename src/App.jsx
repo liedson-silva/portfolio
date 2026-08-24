@@ -29,9 +29,9 @@ const App = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const data = [
-        { id: '1', projeto: <LojaVirtual /> },
-        { id: '2', projeto: <FatalSystem /> },
-        { id: '3', projeto: <Agenda /> },
+        { id: '1', projeto: <FatalSystem /> },
+        { id: '2', projeto: <Agenda /> },
+        { id: '3', projeto: <LojaVirtual /> },
         { id: '4', projeto: <PrevisaoTempo /> },
         { id: '5', projeto: <Portfolio /> },
         { id: '6', projeto: <ToDoList /> },
@@ -139,9 +139,7 @@ const App = () => {
                         <h2 className="saudacao">Olá, eu sou</h2>
                         <h3 className="apresentar-me">Liedson de Oliveira Silva</h3>
                         <p className="sobre-paragrafo">
-                            Tenho 21 anos, graduado em Análise e Desenvolvimento de Sistemas pela UNIP. Desenvolvo software, páginas e sistemas web responsivos de layout atrativo. Ainda
-                            sem experiência profissional, me dedico a projetos pessoais e cursos
-                            para me preparar para novas oportunidades.
+                            Sou Desenvolvedor de Software, graduado em Análise e Desenvolvimento de Sistemas pela UNIP, com foco em desenvolvimento Full Stack e Mobile. Desenvolvo aplicações web, mobile e APIs, buscando criar soluções funcionais, eficientes e modernas. Estou sempre aprimorando meus conhecimentos e buscando novos desafios na área de tecnologia.
                         </p>
                         <button className="botao-cv" onClick={() => window.open(curriculo, '_blank')}>
                             Download CV

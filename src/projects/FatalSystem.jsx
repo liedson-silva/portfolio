@@ -12,12 +12,14 @@ const FatalSystem = () => {
           </p>
           <ul>
             <li className="tecnologia">Node Js</li>
+            <li className="tecnologia">C# (.NET)</li>
             <li className="tecnologia">React Native</li>
             <li className="tecnologia">Windows Form</li>
             <li className="tecnologia">Sql Server</li>
             <li className="tecnologia">React</li>
             <li className="tecnologia">JWT</li>
             <li className="tecnologia">GenAI</li>
+            <li className="tecnologia">Jest</li>
           </ul>
         </div>
       </a>
